@@ -1,6 +1,6 @@
 {
   "name": "@muzamint/mylib",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -56,11 +56,11 @@
     "typescript",
     "tsdx"
   ],
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/mingderwang/mylib.git"
   },
-    "bugs": {
+  "bugs": {
     "url": "https://github.com/mingderwang/mylib/issues"
   }
 }
