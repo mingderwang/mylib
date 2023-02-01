@@ -32,7 +32,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "mylib",
   "author": "Ming-der Wang",
   "module": "dist/mylib.esm.js",
   "size-limit": [
