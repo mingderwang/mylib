@@ -1,6 +1,7 @@
 {
   "name": "@muzamint/mylib",
-  "version": "0.0.4",
+  "version": "0.0.6",
+  "description": "A utility package for accessing blockchain.",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -12,14 +13,14 @@
     "node": ">=18"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "tsdx test",
-    "test:watch": "tsdx test --watch",
-    "test:coverage": "tsdx test --coverage",
-    "lint": "tsdx lint",
+    "start": "nx exec -- tsdx watch",
+    "build": "nx exec -- tsdx build",
+    "test": "nx exec -- tsdx test",
+    "test:watch": "nx exec -- tsdx test --watch",
+    "test:coverage": "nx exec -- tsdx test --coverage",
+    "lint": "nx exec -- tsdx lint",
     "prepare": "tsdx build",
-    "size": "size-limit"
+    "size": "nx exec -- size-limit"
   },
   "husky": {
     "hooks": {
@@ -52,11 +53,14 @@
     "size-limit": "^8.1.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.5.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "nx": "16.5.0",
+    "nx-cloud": "latest"
   },
   "keywords": [
     "typescript",
-    "tsdx"
+    "tsdx",
+    "nx"
   ],
   "repository": {
     "type": "git",
@@ -64,5 +68,19 @@
   },
   "bugs": {
     "url": "https://github.com/mingderwang/mylib/issues"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:coverage": {
+        "outputs": [
+          "{projectRoot}/coverage"
+        ]
+      }
+    }
   }
 }
