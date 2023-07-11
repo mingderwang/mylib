@@ -2,6 +2,7 @@
   "name": "@muzamint/mylib",
   "version": "0.1.2",
   "description": "A utility package for accessing data.",
+  "private": false,
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
