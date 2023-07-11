@@ -1,7 +1,7 @@
 {
   "name": "@muzamint/mylib",
-  "version": "0.0.6",
-  "description": "A utility package for accessing blockchain.",
+  "version": "0.1.2",
+  "description": "A utility package for accessing data.",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
